@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="EcranInventaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,6 +65,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EcranInventaire.xaml.cs">
+      <DependentUpon>EcranInventaire.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -92,6 +99,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\FlecheArriere.png" />
+    <Resource Include="images\Gerer.png" />
+    <Resource Include="images\Imprimante.png" />
+    <Resource Include="images\NouvelUtilisateur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\commande.png" />
+    <Resource Include="images\employe.png" />
+    <Resource Include="images\formulaire.png" />
+    <Resource Include="images\inventaire.png" />
+    <Resource Include="images\vente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

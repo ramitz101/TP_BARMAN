@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Visual Studio 2017\Projects\Barman\obj\Debug\
+D:\TP_barman\Barman\obj\Debug\
 Barman
 none
 false
 DEBUG;TRACE
-D:\Visual Studio 2017\Projects\Barman\App.xaml
-11151548125
+D:\TP_barman\Barman\App.xaml
+2-891808771
 
-9281003306
+10-829641595
 131569487696
-MainWindow.xaml;
+EcranInventaire.xaml;MainWindow.xaml;
 
 True
 
