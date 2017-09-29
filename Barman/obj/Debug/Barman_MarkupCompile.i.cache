@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\TP_barman\Barman\App.xaml
-2-891808771
+4-1276518270
 
-10-829641595
+12-1654475652
 131569487696
-EcranInventaire.xaml;MainWindow.xaml;
+EcranAccueil.xaml;EcranCommande.xaml;EcranInventaire.xaml;MainWindow.xaml;
 
-True
+False
 

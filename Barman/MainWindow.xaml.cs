@@ -20,38 +20,14 @@ namespace Barman
    /// </summary>
    public partial class MainWindow : Window
    {
-        private EcranInventaire Ecraninventaire { get; set; }
-      public MainWindow()
+        private EcranAccueil EcranAccueil{ get; set; }
+        public MainWindow()
       {
          InitializeComponent();
-      }
-
-        private void btnInventaire_Click(object sender, RoutedEventArgs e)
-        {
-            GrdPrincipale.Children.Clear();
-            Ecraninventaire = new EcranInventaire();
-            GrdPrincipale.Children.Add(Ecraninventaire);
-
+         EcranAccueil = new EcranAccueil();
+         GrdPrincipale.Children.Add(EcranAccueil);
         }
 
-        private void btnEmploye_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnVente_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnCommande_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnFormulaireBouteille_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+    
     }
 }

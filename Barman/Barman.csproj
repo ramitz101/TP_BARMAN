@@ -54,6 +54,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="EcranAccueil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EcranCommande.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EcranInventaire.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -65,6 +73,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EcranAccueil.xaml.cs">
+      <DependentUpon>EcranAccueil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranCommande.xaml.cs">
+      <DependentUpon>EcranCommande.xaml</DependentUpon>
     </Compile>
     <Compile Include="EcranInventaire.xaml.cs">
       <DependentUpon>EcranInventaire.xaml</DependentUpon>

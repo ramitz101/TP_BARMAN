@@ -7,44 +7,7 @@
         mc:Ignorable="d"
         Title="Barman" Height="430.623" Width="600">
     <Grid Name="GrdPrincipale">
-        <StackPanel>
-
-            <Button Name="btnInventaire" Click="btnInventaire_Click" Width="200" Height="50" Margin="15">
-                <StackPanel Orientation="Horizontal"  Width="150" Height="36">
-                    <Image Source="images/inventaire.png" Width="39"/>
-                    <TextBlock Text="INVENTAIRE" FontSize="20" ></TextBlock>
-                </StackPanel>
-            </Button>
-            <Button Name="btnEmploye" Click="btnEmploye_Click" Width="200" Height="50" Margin="15">
-                <StackPanel Orientation="Horizontal"  Width="150" Height="36">
-                    <Image Source="images/employe.png"/>
-                    <TextBlock Text="EMPLOYÉS" FontSize="20" ></TextBlock>
-                </StackPanel>
-            </Button>
-
-            <Button Name="btnVente" Click="btnVente_Click" Width="200" Height="50" Margin="15">
-                <StackPanel Orientation="Horizontal"  Width="150" Height="36">
-                    <Image Source="images/vente.png" />
-                    <TextBlock Text="VENTES" FontSize="20" ></TextBlock>
-                </StackPanel>
-            </Button>
-
-
-            <Button Name="btnCommande" Click="btnCommande_Click" Width="200" Height="50" Margin="15">
-                <StackPanel Orientation="Horizontal"  Width="150" Height="36">
-                    <Image Source="images/commande.png" />
-                    <TextBlock Text="COMMANDES" FontSize="20" ></TextBlock>
-                </StackPanel>
-            </Button>
-
-            <Button Name="btnFormulaireBouteille" Click="btnFormulaireBouteille_Click" Width="200" Height="50" Margin="15">
-                <StackPanel Orientation="Horizontal"  Width="155" Height="36">
-                    <Image Source="images/formulaire.png" />
-                    <TextBlock Text="FORMULAIRE" FontSize="20" ></TextBlock>
-                </StackPanel>
-            </Button>
-        </StackPanel>
-
+      
 
     </Grid>
 </Window>
