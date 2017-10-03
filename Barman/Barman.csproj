@@ -66,6 +66,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EcranConsulterVente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EcranGererVente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EcranInventaire.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -86,6 +94,12 @@
     </Compile>
     <Compile Include="EcranCommande.xaml.cs">
       <DependentUpon>EcranCommande.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranConsulterVente.xaml.cs">
+      <DependentUpon>EcranConsulterVente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranGererVente.xaml.cs">
+      <DependentUpon>EcranGererVente.xaml</DependentUpon>
     </Compile>
     <Compile Include="EcranInventaire.xaml.cs">
       <DependentUpon>EcranInventaire.xaml</DependentUpon>

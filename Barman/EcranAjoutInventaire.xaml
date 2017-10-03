@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Barman"
              mc:Ignorable="d" 
-             d:DesignHeight="430" d:DesignWidth="600">
+             d:DesignHeight="350" d:DesignWidth="550">
     <Grid>
-        <TabControl Name="tbcOnglet" SelectionChanged="tbcOnglet_SelectionChanged"  HorizontalAlignment="Left" Height="342" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="2" BorderBrush="Gainsboro">
+        <TabControl Name="tbcOnglet" SelectionChanged="tbcOnglet_SelectionChanged"  HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="600" BorderBrush="Gainsboro">
             <TabControl.Resources>
                 <Style TargetType="TabItem">
                     <Setter Property="Template">
@@ -39,42 +39,35 @@
             <TabItem Name="tbiCommande"   Header="COMMANDES"/>
             <TabItem Header="FORMULAIRE BOUTEILLE"/>
         </TabControl>
-        
-        <Label Content="Recevoir commande" FontWeight="Bold" FontSize="15" Margin="0,30,0,0"></Label>
-        
-        <StackPanel Orientation="Horizontal" Height="25" Width="600" Margin="0,0,0,255">
-            <Label Content="Emplacement"></Label>
-            <Label Content="Marque" Margin="80,0,0,0"/>
-            <Label Content="Quantité" Margin="100,0,0,0"/>
-        </StackPanel >
-        <StackPanel  Orientation="Horizontal"  Height="30" Width="600" Margin="0,45,0,245">
-            <ComboBox Name="cboEmplacement" Width="114" Height="20"></ComboBox>
-            <ComboBox Name="cboMarque" Width="114" Height="20" Margin="50,0,0,0"/>
-            <TextBox x:Name="txtQuantite" Text="1" Width="30" Margin="40,0,0,0"/>
-           
-            <StackPanel>
-                <Button x:Name="btnAugmenteQ" Click="btnAugmenteQ_Click">
-                    <Image Source="images/add.png" Height="7" Width="10"></Image>
-                </Button>
-                <Button Name="btnReduireQ" Click="btnReduireQ_Click">
-                    <Image Source="images/negative.png" Height="10" Width="12"></Image>
-                </Button>
-            </StackPanel>
-            <Button Name="btnAjouter" Click="btnAjouter_Click" Content="Ajouter"  Margin="50,0,0,0" Width="80" ></Button>
-        </StackPanel>
-        <Label Content="Ajouter Nouvelle Bouteille" FontWeight="Bold" FontSize="15" Margin="0,110,0,0"></Label>
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,90">
-            <Label Content="Nom" Width="50" Height="25"></Label>
-            <Label Content="Volume" Width="50" Height="25" Margin="118,0,0,0"></Label>
-            <Label Content="Type d'alcool" Width="80" Height="25" Margin="100,0,0,0"></Label>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="30" Margin="0,0,0,0">
-            <TextBox></TextBox>
-            <TextBox></TextBox>
-            <ComboBox></ComboBox>
-        </StackPanel>
-        
-      
+        <Label Content="Recevoir commande" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Emplacement" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Marque" HorizontalAlignment="Left" Margin="176,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantité" HorizontalAlignment="Left" Margin="332,61,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cboEmplacement" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cboMarque" HorizontalAlignment="Left" Margin="176,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtQuantite" HorizontalAlignment="Left" Height="23" Margin="332,86,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="31"/>
+        <Button Name="btnAugmenterQ" Click="btnAugmenterQ_Click"  HorizontalAlignment="Left" Margin="363,85,0,0" VerticalAlignment="Top" Width="20" Height="13">
+            <Image Source="images/add.png" HorizontalAlignment="Left" Height="7" Margin="353,178,0,0" VerticalAlignment="Top" Width="10"/>
+        </Button>
+        <Button Name="btnReduireQ" Click="btnReduireQ_Click" HorizontalAlignment="Left" Margin="363,98,0,0" VerticalAlignment="Top" Width="20" Height="11">
+            <Image Source="images/negative.png" Height="10" Width="12"></Image>
+        </Button>
+        <Button Name="btnAjouterCommande" Content="Ajouter" HorizontalAlignment="Left" Margin="465,84,0,0" VerticalAlignment="Top" Width="85" Height="24"/>
+        <Label Content="Ajouter nouvelle bouteille" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="0,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="nom" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top"/>
+        <Label Content="Volume" HorizontalAlignment="Left" Margin="176,143,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type d'alcool" HorizontalAlignment="Left" Margin="332,143,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtMarque" HorizontalAlignment="Left" Height="23" Margin="10,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtVolume" HorizontalAlignment="Left" Height="23" Margin="176,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51"/>
+        <ComboBox Name="cboTypeAlcool" HorizontalAlignment="Left" Margin="332,169,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Name="btnAjouterNouvelleB" Content="Ajouter" HorizontalAlignment="Left" Margin="465,167,0,0" VerticalAlignment="Top" Width="85" Height="24"/>
+        <Label Content="Ajouter type d'alcool" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="-4,197,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nouveau type d'alcool" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtNouveauType" HorizontalAlignment="Left" Height="23" Margin="10,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnAjouterNouveauType" Content="Ajouter" HorizontalAlignment="Left" Margin="465,258,0,0" VerticalAlignment="Top" Width="85" Height="24"/>
+        <Button Name="btnAnnuler" Content="Annuler" HorizontalAlignment="Left" Margin="58,301,0,0" VerticalAlignment="Top" Width="136" Height="49"/>
+        <Button Name="btnConfirmer" Content="Confirmer" HorizontalAlignment="Left" Margin="288,301,0,0" VerticalAlignment="Top" Width="136" Height="49"/>
+
 
 
 

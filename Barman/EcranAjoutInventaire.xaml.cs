@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace Barman
 {
     /// <summary>
-    /// Interaction logic for EcranAjoutInventaire.xaml
+    /// Logique d'interaction pour EcranAjoutInventaire.xaml
     /// </summary>
     public partial class EcranAjoutInventaire : UserControl
     {
@@ -26,7 +26,6 @@ namespace Barman
             tbcOnglet.SelectedItem = tbiInventaire;
             tbiInventaire.IsSelected = true;
         }
-
 
         private void tbcOnglet_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -50,27 +49,6 @@ namespace Barman
 
         }
 
-        private void btnAjouter_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnAugmenteQ_Click(object sender, RoutedEventArgs e)
-        {
-            int quantite;
-            try
-            {
-                quantite = Int32.Parse(txtQuantite.Text);
-                quantite++;
-                txtQuantite.Text = quantite.ToString();
-            }
-            catch(Exception ex)
-            {
-                quantite = 1;
-                txtQuantite.Text = quantite.ToString();
-            }
-        }
-
         private void btnReduireQ_Click(object sender, RoutedEventArgs e)
         {
             int quantite;
@@ -81,7 +59,23 @@ namespace Barman
                     quantite--;
                 txtQuantite.Text = quantite.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
+            {
+                quantite = 1;
+                txtQuantite.Text = quantite.ToString();
+            }
+        }
+
+        private void btnAugmenterQ_Click(object sender, RoutedEventArgs e)
+        {
+            int quantite;
+            try
+            {
+                quantite = Int32.Parse(txtQuantite.Text);
+                quantite++;
+                txtQuantite.Text = quantite.ToString();
+            }
+            catch (Exception ex)
             {
                 quantite = 1;
                 txtQuantite.Text = quantite.ToString();
