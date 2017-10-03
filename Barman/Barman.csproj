@@ -58,6 +58,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EcranAjoutInventaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EcranCommande.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,6 +80,9 @@
     </Compile>
     <Compile Include="EcranAccueil.xaml.cs">
       <DependentUpon>EcranAccueil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranAjoutInventaire.xaml.cs">
+      <DependentUpon>EcranAjoutInventaire.xaml</DependentUpon>
     </Compile>
     <Compile Include="EcranCommande.xaml.cs">
       <DependentUpon>EcranCommande.xaml</DependentUpon>
@@ -126,6 +133,12 @@
     <Resource Include="images\formulaire.png" />
     <Resource Include="images\inventaire.png" />
     <Resource Include="images\vente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\negative.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

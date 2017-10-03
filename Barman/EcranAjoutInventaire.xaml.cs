@@ -16,20 +16,17 @@ using System.Windows.Shapes;
 namespace Barman
 {
     /// <summary>
-    /// Logique d'interaction pour inventaire.xaml
+    /// Interaction logic for EcranAjoutInventaire.xaml
     /// </summary>
-    public partial class EcranInventaire : UserControl
+    public partial class EcranAjoutInventaire : UserControl
     {
-        public EcranInventaire()
+        public EcranAjoutInventaire()
         {
             InitializeComponent();
             tbcOnglet.SelectedItem = tbiInventaire;
             tbiInventaire.IsSelected = true;
-
         }
 
-     
-      
 
         private void tbcOnglet_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -50,14 +47,45 @@ namespace Barman
                 EcranCommande EC = new EcranCommande();
                 ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Add(EC);
             }
-          
+
         }
 
-        private void btnAjout_Click(object sender, RoutedEventArgs e)
+        private void btnAjouter_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Clear();
-            EcranAjoutInventaire EAI = new EcranAjoutInventaire();
-            ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Add(EAI);
+
+        }
+
+        private void btnAugmenteQ_Click(object sender, RoutedEventArgs e)
+        {
+            int quantite;
+            try
+            {
+                quantite = Int32.Parse(txtQuantite.Text);
+                quantite++;
+                txtQuantite.Text = quantite.ToString();
+            }
+            catch(Exception ex)
+            {
+                quantite = 1;
+                txtQuantite.Text = quantite.ToString();
+            }
+        }
+
+        private void btnReduireQ_Click(object sender, RoutedEventArgs e)
+        {
+            int quantite;
+            try
+            {
+                quantite = Int32.Parse(txtQuantite.Text);
+                if (quantite > 1)
+                    quantite--;
+                txtQuantite.Text = quantite.ToString();
+            }
+            catch(Exception ex)
+            {
+                quantite = 1;
+                txtQuantite.Text = quantite.ToString();
+            }
         }
     }
 }
