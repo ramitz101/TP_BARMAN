@@ -20,7 +20,7 @@ namespace Barman
     /// </summary>
     public partial class EcranAccueil : UserControl
     {
-        private EcranInventaire Ecraninventaire { get; set; }
+        
         public EcranAccueil()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace Barman
         {
             ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Clear();
 
-            Ecraninventaire = new EcranInventaire();
+            EcranInventaire Ecraninventaire = new EcranInventaire();
             ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Add(Ecraninventaire);
 
 
@@ -43,7 +43,10 @@ namespace Barman
 
         private void btnVente_Click(object sender, RoutedEventArgs e)
         {
+            ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Clear();
 
+           // EcranVente = new EcranInventaire();
+           // ((MainWindow)System.Windows.Application.Current.MainWindow).GrdPrincipale.Children.Add(Ecraninventaire);
         }
 
         private void btnCommande_Click(object sender, RoutedEventArgs e)
