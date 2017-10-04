@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\TP_BARMAN\Barman\obj\Debug\
+=======
+D:\Barmans\TP_BARMAN\Barman\obj\Debug\
+>>>>>>> 11811317fde2c88a71c256c51df6e5fa27674552
 Barman
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\TP_BARMAN\Barman\App.xaml
 81908669607
 
 16184233256
 131569487696
 EcranAccueil.xaml;EcranAjoutInventaire.xaml;EcranCommande.xaml;EcranConsulterVente.xaml;EcranGererVente.xaml;EcranInventaire.xaml;EcranVente.xaml;MainWindow.xaml;
+=======
+D:\Barmans\TP_BARMAN\Barman\App.xaml
+14-2104665788
+
+22-381347880
+131569487696
+EcranAccueil.xaml;EcranAjoutInventaire.xaml;EcranCommande.xaml;EcranConsulterVente.xaml;EcranEmploye.xaml;EcranFormulaireBouteille.xaml;EcranGererVente.xaml;EcranInventaire.xaml;EcranNouvelleCommande.xaml;FenetreAjouterEmploye.xaml;FenetreAuthentification.xaml;FenetreModifierBouteille.xaml;FenetreModifierEmploye.xaml;MainWindow.xaml;
+>>>>>>> 11811317fde2c88a71c256c51df6e5fa27674552
 
 False
 

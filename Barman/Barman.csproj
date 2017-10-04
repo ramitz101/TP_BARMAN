@@ -70,6 +70,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EcranEmploye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EcranFormulaireBouteille.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EcranGererVente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,7 +86,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="EcranVente.xaml">
+=======
+    <Page Include="EcranNouvelleCommande.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FenetreAjouterEmploye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreAuthentification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreModifierBouteille.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreModifierEmploye.xaml">
+>>>>>>> 11811317fde2c88a71c256c51df6e5fa27674552
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,14 +130,37 @@
     <Compile Include="EcranConsulterVente.xaml.cs">
       <DependentUpon>EcranConsulterVente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EcranEmploye.xaml.cs">
+      <DependentUpon>EcranEmploye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranFormulaireBouteille.xaml.cs">
+      <DependentUpon>EcranFormulaireBouteille.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EcranGererVente.xaml.cs">
       <DependentUpon>EcranGererVente.xaml</DependentUpon>
     </Compile>
     <Compile Include="EcranInventaire.xaml.cs">
       <DependentUpon>EcranInventaire.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="EcranVente.xaml.cs">
       <DependentUpon>EcranVente.xaml</DependentUpon>
+=======
+    <Compile Include="EcranNouvelleCommande.xaml.cs">
+      <DependentUpon>EcranNouvelleCommande.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreAjouterEmploye.xaml.cs">
+      <DependentUpon>FenetreAjouterEmploye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreAuthentification.xaml.cs">
+      <DependentUpon>FenetreAuthentification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreModifierBouteille.xaml.cs">
+      <DependentUpon>FenetreModifierBouteille.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreModifierEmploye.xaml.cs">
+      <DependentUpon>FenetreModifierEmploye.xaml</DependentUpon>
+>>>>>>> 11811317fde2c88a71c256c51df6e5fa27674552
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
