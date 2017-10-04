@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\TP_BARMAN\Barman\obj\Debug\
+D:\TpBarman\Barman\obj\Debug\
 Barman
 none
 false
 DEBUG;TRACE
-D:\TP_BARMAN\Barman\App.xaml
-7-816062800
+D:\TpBarman\Barman\App.xaml
+8-1141870205
 
-151775828845
+16-462075335
 131569487696
-EcranAccueil.xaml;EcranAjoutInventaire.xaml;EcranCommande.xaml;EcranConsulterVente.xaml;EcranGererVente.xaml;EcranInventaire.xaml;MainWindow.xaml;
+EcranAccueil.xaml;EcranAjoutInventaire.xaml;EcranCommande.xaml;EcranConsulterVente.xaml;EcranGererVente.xaml;EcranInventaire.xaml;EcranNouvelleCommande.xaml;MainWindow.xaml;
 
 False
 
