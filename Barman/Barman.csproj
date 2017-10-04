@@ -70,11 +70,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EcranEmploye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EcranFormulaireBouteille.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EcranGererVente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EcranInventaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreAjouterEmploye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreAuthentification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreModifierBouteille.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FenetreModifierEmploye.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,11 +122,29 @@
     <Compile Include="EcranConsulterVente.xaml.cs">
       <DependentUpon>EcranConsulterVente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EcranEmploye.xaml.cs">
+      <DependentUpon>EcranEmploye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EcranFormulaireBouteille.xaml.cs">
+      <DependentUpon>EcranFormulaireBouteille.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EcranGererVente.xaml.cs">
       <DependentUpon>EcranGererVente.xaml</DependentUpon>
     </Compile>
     <Compile Include="EcranInventaire.xaml.cs">
       <DependentUpon>EcranInventaire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreAjouterEmploye.xaml.cs">
+      <DependentUpon>FenetreAjouterEmploye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreAuthentification.xaml.cs">
+      <DependentUpon>FenetreAuthentification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreModifierBouteille.xaml.cs">
+      <DependentUpon>FenetreModifierBouteille.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreModifierEmploye.xaml.cs">
+      <DependentUpon>FenetreModifierEmploye.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
